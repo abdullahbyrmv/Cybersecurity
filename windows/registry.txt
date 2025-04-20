@@ -1,0 +1,45 @@
+Windows Registry is a hierarchical database that contains the operating system and system configurations related to the programs installed in the system. It keeps the information and settings of programs and hardware in this database. For example, when a program is installed on Windows, the program may choose to keep the expiry date of its license in the Windows Registry.
+
+To access registry editor, open run application and type regedit.
+
+There are generally seven predefined root keys:
+
+1. HKEY_LOCAL_MACHINE or HKLM
+2. HKEY_CURRENT_CONFIG or HKCC
+3. HKEY_CLASSES_ROOT or HKCR
+4. HKEY_CURRENT_USER or HKCU
+5. HKEY_USERS or HKU
+6. HKEY_PERFORMANCE_DATA (only in Windows NT, but invisible in the Windows Registry Editor)
+7. HKEY_DYN_DATA (only in Windows 9x, and visible in the Windows Registry Editor)
+
+1. HKEY_LOCAL_MACHINE:
+
+It is the section where computer-specific hardware and software configuration information is kept. Settings applicable to each logged-in user are maintained in this section.
+
+Below are essential elements within this subkey:
+
+	1. HARDWARE: This section contains information about the hardware devices connected to the system.
+
+	2. SAM: This section contains the encrypted versions of the passwords of the users.
+
+	3. SECURITY: It is the section that contains the security policies in the system.
+
+	4. SOFTWARE: This section contains the configurations of the operating system services as well as the programs installed in the system.
+
+	5. SYSTEM: It is the section where the configuration information of the system is kept.
+
+
+
+2. HKEY_CURRENT_CONFIG: It is the section that keeps the hardware configurations during the operation of the system.
+
+
+3. HKEY_CLASSES_ROOT: It contains software settings, shortcuts, and all other user interface-related information. If this partition is deleted, none of the files will open, even if Windows is running.
+
+
+4. HKEY_CURRENT_USER: This is the section where the configurations of the logged-in user are kept.
+
+
+Reg extension files: Files with the “Reg” extensions are the file format saved when exporting the registry files.
+
+
+Registry Operations on the Command Line: https://ss64.com/nt/reg.html

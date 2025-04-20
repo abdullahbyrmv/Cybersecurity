@@ -1,0 +1,7 @@
+1. View scheduled task: Enter taskschd.msc in runner
+2. schtasks: View all scheduled tasks using command line
+3. schtasks /Query /TH task_name: View a specific task from the scheduled tasks list
+4. schtasks /Change /ENABLE /TN task_name: Enable a specific task
+5. schtasks /Run /TN task_name: Run a specific scheduled task
+6. schtasks /End /TN task_name: End a specific scheduled task
+7. schtasks /Delete /TN task_name: Delete a specific scheduled task

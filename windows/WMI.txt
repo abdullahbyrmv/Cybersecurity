@@ -1,0 +1,16 @@
+Windows Management Instrumentation (WMI)
+
+What is Windows Management Instrumentation (WMI)?
+
+Windows Management Instrumentation (WMI) is a feature used to access components of the Windows operating system. WMI allows local and remote access. That's why it's one of the Windows features that attackers often use. Attackers can use WMI for reconnaissance as well as for "Lateral Movement" purposes.
+
+Lateral Movement: It is called the attackers' movement by gaining access on other machines in the same network after obtaining the first access on the target system.
+
+WMI is often preferred by attackers because it is readily available on the Windows operating system and has wide usage features. For example, attackers could remotely run executable files this way.
+
+Commands to gather information using WMI: wmic os list brief
+Gather usernames in system: wmic useraccount get name
+
+The number of operations that can be done with WMI is quite large. For detailed information, you can use the following address:
+
+WMIC: https://ss64.com/nt/wmic.html

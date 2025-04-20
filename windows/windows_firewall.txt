@@ -1,0 +1,7 @@
+To enter windows firewall settings, open run application and type wf.msc.
+
+1. netsh advfirewall firewall show rule name=all: Display all the firewall rules available in the system.
+2. netsh advfirewall firewall show rule name="Rule_Name": Display only the firewall rule with specified name.
+3. netsh advfirewall firewall delete rule name="Rule_Name": Delete the firewall rule with specified rule name.
+
+Command documentation: https://ss64.com/nt/netsh.html

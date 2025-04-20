@@ -7,3 +7,6 @@
 7. systeminfo: View detailed information regarding the system
 8. type: Read the contents of a document
 9. rename old_name new name: Rename the file or directory from old to new one
+10. tasklist: Display the list of running processes in the system
+11. tasklist | findstr process_name: View the process you want to check
+12. taskkill /PID process_id: This command is used to kill the process with specified process_id

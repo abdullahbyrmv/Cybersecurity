@@ -1,0 +1,48 @@
+Event Logs are logs collected through the Windows operating system. There are various types of logs in these logs. Application logs, security logs and system logs can be given as examples. Event logs are a very important resource to understand whether many processes on the system have taken place and to have a grasp of the details. SOC analysts often make use of event logs when detecting the presence and activity of threats on the system. For example, some event logs are as follows:
+
+Powershell activities
+Deleting event logs
+Starting and stopping services
+Creating a new scheduled task
+RDP activity
+Changing user privileges
+Failed login activities
+
+In Windows systems, there are three main event log titles as "Application", "System" and "Security".
+
+Application:
+It provides log records related to the applications in the system. For example, you can find errors received by an antivirus application running on the system.
+
+
+System:
+It is the area where the logs created by the basic components of the operating system are located. For example, logs for a driver loads and unloads operations can be found here.
+
+
+Security:
+Records regarding authentication and security are kept here.
+
+
+Each log has its event ID that correspond to specific action.
+Event ID List: https://andreafortuna.org/2019/06/12/windows-security-event-logs-my-own-cheatsheet/
+
+
+
+
+Viewing Event Logs via Command Line:
+
+For example, Command: wevtutil query-events Security /rd:true /count:1 /format:text /q:"Event[System[(EventID=4625)]]"
+
+The explanations of the parameters applied in the command are as follows:
+
+"query-events" parameter : Query events from a log or log file.
+"/rd" parameter : Reverse direction.
+"/count" parameter : Log count.
+"/format" parameter : Output format.
+"/q" parameter : XPathQuery.
+
+
+
+
+Many other operations can be performed on event logs using "Wevtutil". For example, event logs can be deleted via the command line. For more detailed information, you can visit the following address:
+
+Wevtutil: https://ss64.com/nt/wevtutil.html

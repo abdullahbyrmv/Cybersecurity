@@ -1,0 +1,6 @@
+1. sc query: Display all the running services
+2. sc query type=service state=all: Display all the services in the system including not running services
+3. sc query service_name: This command is used to gather information about the provided service
+4. sc start service_name: Start executing the specified service
+5. sc stop service_name: Stop executing the service
+6. View services: services.msc in runner
