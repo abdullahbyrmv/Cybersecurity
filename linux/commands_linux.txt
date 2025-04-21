@@ -2,4 +2,13 @@
 2. rlwrap nc -lnvp <port_number>: Open netcat listener
 3. ssh -i <id_rsa_identity_file> username@ip_address -p <port_number>: Login to SSH using id_rsa identity
 4. binwalk -e <file> : This tool is used to view the inside of image files and extract known files
-5.   
+5. whatis <commands>: view a single line of brief information about command running on the command line
+6. more <file_to_read>: This command allow us to read longer files
+7. wc -lwm <file>: Count the number of lines (l), words (w) and characters (m) in file
+8. grep <word_to_search> <file>: The grep command is a command to search within a file
+9. sort <file>: Sort the contents of file alphabetically
+10. uniq <file>: Eliminate the same values in the file and keep only one of them
+11. uptime: The uptime command is the command that shows how long the system has been up
+12. history: The history command is the command that shows the history of commands executed on the command line
+13. find <path> -name <file_name_to_search>: Find whether entered file exists within the path or not
+14. file <file>: Display the information about the file

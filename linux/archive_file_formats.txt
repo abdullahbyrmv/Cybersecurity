@@ -1,0 +1,8 @@
+1. gzip <file>: zip the file
+2. gunzip <zip_file>: unzip the zip file
+3. tar cvf <tar_file_name_to_create> <file1> <file2>: archive multiple files to one file
+4. tar xvf <tar_file_to_extract>: extract the contents of tar file
+5. zip <zip_file_to_create> <file1> <file2>: create zip file based on multiple files
+6. unzip <zip_file>: unzip the zip file
+7. rar a <rar_file_to_create> <file1> <file2>: create rar file based on provided files
+8. unrar e <rar_file_to_extract>
